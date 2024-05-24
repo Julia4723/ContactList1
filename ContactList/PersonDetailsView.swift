@@ -15,8 +15,7 @@ struct PersonDetailsView: View {
         
         VStack {
             VStack(alignment: .leading) {
-                Text("Phone: \(person.phoneNumber)")
-                    
+                Text("Phone: \(person.phoneNumber)")   
                 Text ("Email \(person.email)")
             }
             .padding(.top, 16)
