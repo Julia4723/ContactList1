@@ -13,16 +13,23 @@ struct PersonDetailsView: View {
     
     var body: some View {
         
-        VStack {
-            VStack(alignment: .leading) {
-                Text("Phone: \(person.phoneNumber)")   
-                Text ("Email \(person.email)")
+        List {
+            HStack {
+                Spacer()
+                Image(systemName: "person")
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                    .padding()
+                Spacer()
+
             }
-            .padding(.top, 16)
-            .padding(.trailing, 150)
-            .font(.title2)
-            .navigationTitle(person.fullName)
+            
+            Text("Phone: \(person.phoneNumber)")
+            Text ("Email \(person.email)")
+           
         }
+        
+        .navigationTitle(person.fullName)
         Spacer()
        
     }
