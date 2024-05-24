@@ -21,8 +21,6 @@ struct ContactDetailsView: View {
                 .listStyle(.automatic)
             }
         }
-       
-        
     }
 
 }
